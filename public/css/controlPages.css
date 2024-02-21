@@ -44,6 +44,27 @@
     background-color: var(--red);
 }
 
+
+.btn-action.remove {
+    background-color: var(--red); 
+    color: var(--light); 
+}
+
+.btn-action.remove:hover {
+    background-color: darken(var(--red), 10%); 
+    transition: background-color 0.3s ease; /
+}
+
+/* Enhance button interactivity */
+.btn-action:focus {
+    outline: none; /* Removes the default outline to maintain the design */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-action:active {
+    transform: translateY(2px);  
+}
+
 /* Responsive Table */
 @media screen and (max-width: 768px) {
     .table-responsive {
