@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Control Pages</title>
 
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
     <link rel="stylesheet" href="../../public/css/adminDashboard.css">
 
+    <title>AdminHub</title>
 </head>
 
 <body>
+
+
+    <!-- SIDEBAR -->
     <section id="sidebar">
         <a href="#" class="brand">
             <i class='bx bxs-smile'></i>
@@ -82,22 +88,46 @@
 
         <!-- MAIN -->
         <main>
-            <div class="head-title">
-                <div class="left">
-                    <h1>Dashboard</h1>
-                    <ul class="breadcrumb">
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li><i class='bx bx-chevron-right'></i></li>
-                        <li>
-                            <a class="active" href="#">Home</a>
-                        </li>
-                    </ul>
+            <div class="table-responsive">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Page ID</th>
+                            <th>Page Name</th>
+                            <th>Page Link</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Home</td>
+                            <td>/home</td>
+                            <td>
+                                <button class="btn-action show">Show</button>
+                                <button class="btn-action hide">Hide</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a href="#">&laquo; Prev</a>
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">Next &raquo;</a>
                 </div>
-
             </div>
+        </main>
+        <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
 
+
+    <script src="../../public/js/adminDashboard.js"></script>
 </body>
 
 </html>
